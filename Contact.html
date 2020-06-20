@@ -1,0 +1,56 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Contact Me</title>
+        <meta name="description" content="Contact Us">
+        <meta name="author" content="Samara Love">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div class="sidenav">
+            <div id= "sidenav-text"> 
+                <h3> Samara Love </h3>
+                <img src="Portfolio_Img/2.jpg" alt="Samara Profile Image.">
+                <p> Hi! Welcome to my Profile.. </p>
+            </div>
+
+            <a href="Home.html">Home</a>
+            <a href="SL_portfolio.html">About</a>
+            <a href="Projects.html">Projects</a>
+            <a href="Contact.html">Contact</a>
+          </div>
+
+        <div class="contact-text">
+              <h1> Contact Me </h1>
+              <p> Please fill in your contact information and message below and I will get back to you. </p>
+        </div>  
+
+        <form action="https://formspree.io/mzbjvbap" method="POST">
+            <!-- your code here -->
+            <div class="form-item">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-item">
+                <label form="mail">Email</label>
+                <input type="email" id="mail" name="email" required>
+            </div>
+            <div class="form-item">
+                <label form="message">Message</label>
+                <textarea id="message" name="message" required></textarea >
+            </div>
+            <div class="form-item">
+                <button type="submit">Send!</button>
+            </div>
+        </form>
+
+
+    </body>
+    <footer>
+        <p id="footer"> June 2020 </p>
+    </footer>
+
+</html>
