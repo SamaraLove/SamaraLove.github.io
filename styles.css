@@ -9,9 +9,17 @@ body {
 header {
     text-align: center;
 }
+/* Footer
+############################################################### */
+footer {
+    font-size: 28px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    /* margin-bottom: 10px; */
+}
 
-
-/* MAIN TITLE
+/* MAIN TITLE -- ABOUT PAGE
 ############################################################### */
 .main-title {
     margin-left: 200px; /* Same as the width of the sidenav */
@@ -21,6 +29,8 @@ header {
     background-color: #DFC5FE;
     align-items: center;
     margin-top: 0;
+    width: calc(100% - 200px)
+
 }
 
 .main-text {
@@ -43,8 +53,6 @@ div.main-title img {
 
 /* SIDE BAR
 ############################################################### */
-
-
 .sidenav {
     height: 100%;
     width: 200px;
@@ -74,26 +82,47 @@ div.main-title img {
   .sidenav a:hover {
     color: #818181;
   }
-  
+  /* SOCIAL MEDIA - SIDE BAR
+############################################################### */
 
-/* FORM
+div.social-media img {
+    /* object-fit: cover; */
+    height: 20px;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between; */
+    /* width: 100%; */
+}
+
+/* div.social-media a {
+    border: 2px solid #fda103;
+    border-radius: 5px;
+    padding: 5px;
+    color: #fda103;
+    text-align: center;
+} */
+
+
+/* FORM - CONTACT PAGE
 ############################################################### */
 
 .contact-text {
-    /* margin-left: 200px; Same as the width of the sidenav */
+    margin-left: 200px; /* Same as the width of the sidenav */
+    width:calc(100% - 200px);
     display: flex; 
     flex-direction: column;
     align-items: center;
     justify-content: center; 
+    margin-right: auto;
     /* flex-basis: 70%; */
 }
 
   form {
-    margin-left: 10px; /* Same as the width of the sidenav */
+    margin-left: 200px; /* Same as the width of the sidenav */
+    width:calc(100% - 200px);
     margin-top: 5%;
     font-size: 28px; /* Increased text to enable scrolling */
     padding: 0px 10px;
-    width: 90%;
 }
 
 .form-item {
@@ -139,10 +168,11 @@ div.main-title img {
 }
 
 
-/* Code icons
+/* Code icons 
 ############################################################### */
  .coding-skills{
     margin-left: 200px; /* Same as the width of the sidenav */
+    width:calc(100% - 200px);
     font-size: 24px; /* Increased text to enable scrolling */
     /* display: flex;
     flex-wrap: wrap;
@@ -155,40 +185,6 @@ div.main-title img {
     display: flex;
     flex-direction: column;    
 }
-
-
-/* Footer
-############################################################### */
-footer {
-    font-size: 28px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    /* margin-bottom: 10px; */
-}
-
-
-
-/* SOCIAL MEDIA
-############################################################### */
-
-div.social-media img {
-    object-fit: cover;
-    height: 30px;
-    /* display: flex;
-    flex-direction: row;
-    justify-content: space-between; */
-    /* width: 100%; */
-}
-
-/* div.social-media a {
-    border: 2px solid #fda103;
-    border-radius: 5px;
-    padding: 5px;
-    color: #fda103;
-    text-align: center;
-} */
-
 
 /* SKILLS
 ############################################################### */
@@ -205,7 +201,8 @@ div.social-media img {
 /* PROJECTS
 ############################################################### */
 .Projects-title {
-    /* margin-left: 200px; Same as the width of the sidenav */
+    margin-left: 200px; /* Same as the width of the sidenav */
+    width:calc(100% - 200px);
     display: flex; 
     flex-direction: column;
     align-items: center;
@@ -245,6 +242,8 @@ div.Projects a:hover {
 }
 
 #content {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    width:calc(100% - 200px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -255,7 +254,6 @@ div.Projects a:hover {
     /* flex-basis: 100%;; */
     align-content: center;
     /* object-fit: cover; */
-    width: 100%;
 }
 
 
