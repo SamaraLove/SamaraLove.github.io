@@ -72,56 +72,132 @@ footer {
 /* MAIN TITLE -- ABOUT PAGE
 ############################################################### */
 .main-title {
-    margin-left: 200px; /* Same as the width of the sidenav */
     font-size: 24px; /* Increased text to enable scrolling */
     /* padding: 0px 10px; */
     display: flex; 
     background-color: #f1f1f1;
-    align-items: center;
+    /* align-items: center; */
     margin-top: 0;
-    width: calc(100% - 200px)
-    /* width: 100%; */
+    /* flex-direction: column; */
 }
 
 .main-text {
     display: flex; 
     flex-direction: column;
-    justify-content: space-between; 
-    flex-basis: 60%;
-
+    /* justify-content: space-between;  */
 }
+
+.main-text p {
+    text-align: justify;
+    padding: 20px;
+}
+
 div.main-title img {
     /* padding: 0px 10px; */
     display: flex;
-    flex-basis: 40%;
     object-fit: cover;
-    height: 400px;
     margin-right: auto;
-    /* width: 40% */
+    width: 45%;
 }
 
+.SK {
+    display: flex;
+}
+.Aboutdiv{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 
+@media(min-width: 1000px) { 
+
+    .main-title {
+        margin-left: 200px; /* Same as the width of the sidenav */
+        width: calc(100% - 200px);
+        /* padding: 0px 10px; */
+        align-items: center;
+    }
+
+    .main-text {
+        flex-basis: 60%;
+    }
+
+    div.main-title img {
+        flex-basis: 40%;
+        height: 450px;
+    }
+
+    .SK {
+        margin-left: 200px; /* Same as the width of the sidenav */
+        width: calc(100% - 200px);
+        justify-content: space-evenly;
+    }
+    .skill-text {
+        width: 50%;
+    }
+    
+    .coding-skills{
+        width: 50%;
+        padding-left: 20px;
+    } 
+}
+
+@media(max-width: 999px) { 
+
+
+    .main-title {
+        width: 100%;
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .main-text {
+        flex-basis: 60%;
+        /* justify-content: center; */
+        /* align-items: center; */
+    }
+    .main-text h1 {
+        text-align: center;
+    }
+    .main-text h2 {
+        text-align: center;
+    }
+
+    div.main-title img {
+        /* flex-basis: 30%; */
+        height: 300px;
+        width: 100%;
+    }
+
+    .SK {
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+    .skill-text {
+        width: 100%;
+    }
+    
+    .coding-skills{
+        width: 100%;
+    } 
+}
 /* Code icons 
 ############################################################### */
 .skill-text {
     margin-top: 20px;
     display: flex;
     border: 2px solid #DFC5FE;
-    width: 40%;
     font-size: 24px; /* Increased text to enable scrolling */
-
-}
-
-.SK {
-    margin-left: 200px; /* Same as the width of the sidenav */
-    display: flex;
-    width: calc(100% - 200px)
+    text-align: justify;
+    padding: 20px;
 }
 
 .coding-skills{
     display: flex;
     flex-direction: column;
-    width: 40%;
     /* margin-left: 60%;
     margin-bottom: 10%; */
     /* transform: translate(-50%,-50%); */
@@ -229,9 +305,27 @@ div.social-media img {
 /* FORM - CONTACT PAGE
 ############################################################### */
 
+@media(min-width: 1000px) { 
+    .contact-text {
+        margin-left: 200px; /* Same as the width of the sidenav */
+        width:calc(100% - 200px);
+    }
+
+    form {
+        margin-left: 200px; /* Same as the width of the sidenav */
+        width:calc(100% - 200px);
+    }
+}
+
+@media(max-width: 999px) { 
+    .contact-text {
+        width:100%;
+    }
+    form {
+        width:100%;
+    }
+}
 .contact-text {
-    margin-left: 200px; /* Same as the width of the sidenav */
-    width:calc(100% - 200px);
     display: flex; 
     flex-direction: column;
     align-items: center;
@@ -241,8 +335,6 @@ div.social-media img {
 }
 
   form {
-    margin-left: 200px; /* Same as the width of the sidenav */
-    width:calc(100% - 200px);
     margin-top: 5%;
     font-size: 28px; /* Increased text to enable scrolling */
     padding: 0px 10px;
@@ -266,6 +358,10 @@ div.social-media img {
     border: 2px solid #FDDC5C;
 }
 
+.form-item textarea {
+    min-height: 100px;
+}
+
 .form-item input:hover,
 .form-item textarea:hover {
     border: 2px solid #818181;
@@ -278,6 +374,9 @@ div.social-media img {
     background-color: #FFF;
     padding: 5px;
     font-size: 18px;
+    border-radius: 5px;
+    min-width: 200px;
+    min-height: 20px;
 }
 
 .form-item button:hover {
@@ -288,6 +387,7 @@ div.social-media img {
 
 .form-item button {
     width: 100px;
+    border-radius: 5px;
 }
 
 /* PROJECTS
