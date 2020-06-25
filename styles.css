@@ -15,7 +15,7 @@ body {
         line-height:2.5rem;
     }  
 }
-@media(max-width: 999px) { 
+@media(max-width: 1000px) { 
     body {
         font-size: 1rem;
         line-height:1.5rem;
@@ -154,8 +154,13 @@ div.main-title img {
     /* padding: 2px; */
     margin: 5px;
     display: flex;
-    line-height: 1rem;
     justify-content: center;
+    min-width: 12vw;
+    align-items: center;
+}
+
+#Hobbies p {
+    text-align: center;
 }
 
 @media(min-width: 1000px) { 
@@ -206,12 +211,12 @@ div.main-title img {
     }
 
     .Hobbies {
-        min-width: 10vw;
+        min-width: 25vw;
         padding: 2px;
     }
 }
 
-@media(max-width: 999px) { 
+@media(max-width: 1000px) { 
 
     .main-title {
         /* width: 100%; */
@@ -382,7 +387,7 @@ div.main-title img {
     }
 }
 
-@media(max-width: 999px) {
+@media(max-width: 1000px) {
     .sidenav {
         display: none;
 }
@@ -423,7 +428,7 @@ div.social-media img {
     }
 }
 
-@media(max-width: 999px) { 
+@media(max-width: 1000px) { 
     .contact-text {
         width:100%;
     }
@@ -542,7 +547,7 @@ div.Projects img {
 }
 
 
-@media(max-width: 999px) {
+@media(max-width: 1000px) {
     .Projects-title {
         width: 100%;
     }
