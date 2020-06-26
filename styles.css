@@ -202,7 +202,7 @@ div.main-title img {
 
 #Hobbies p {
     text-align: center;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
 }
 
 .dog p {
@@ -769,7 +769,7 @@ div.main-title img {
     }
 
     div.hvrbox {
-        flex-basis:100%;
+        width:90%;
         margin-bottom: 20px;
     }
 
@@ -778,10 +778,12 @@ div.main-title img {
         margin-right: 20px;
     }
     .hvrbox img {
-        height: 250px;
+        height: 100px;
     }
 
 } 
+
+
 
 @media(min-width: 1280px) { 
     .Projects-title {
