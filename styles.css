@@ -129,7 +129,7 @@ header {
     }
 }
 
-@media(max-width: 1279px) { 
+@media(max-width: 999px) { 
     .rotating-banner img{
         /* top: 50%; */
         height: 600px;
@@ -151,6 +151,33 @@ header {
     .note {
         bottom: 8%;
         left: 14%;
+    }
+
+}
+
+@media only screen and (max-width: 1279px) and (min-width: 1000px) {
+/* @media(max-width: 1025px) {  */
+    .rotating-banner img{
+        height: 1000px;
+        width: 100%;
+        margin-top: 4%;
+        object-fit: cover;
+        /* height: 40%; */
+    }
+    .top-nav{
+        top: 0%;
+        max-height: 9%;
+    }
+    .SL-Title{
+        position: absolute;
+        top: 10%;
+        left: 35%;
+        font-size: 0.8em;
+        line-height: 2em;
+    }
+    .note {
+        bottom: 10%;
+        left: 35%;
     }
 
 }
@@ -794,7 +821,7 @@ div.main-title img {
 }
 
 
-@media(max-width: 1279px) {
+@media(max-width: 999px) {
     .Projects-title {
         width: 95%;
         text-align: justify;
@@ -844,6 +871,14 @@ div.main-title img {
 
 }   
 
+@media only screen and (max-width: 1279px) and (min-width: 1000px) {
+    .hvrbox img {
+        height: 400px;
+    }
+    div.hvrbox {
+        width:98%;
+    }
+}
 
 
 /* PROJECT 1 page palceholder
