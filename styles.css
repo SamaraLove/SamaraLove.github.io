@@ -26,6 +26,7 @@ body {
 }
 @media(max-width: 1279px) { 
     body {
+        width:98%;
         font-size: 1rem;
         line-height:1.5rem;
     }
@@ -180,6 +181,7 @@ div.main-title img {
 .Aboutdiv{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 100%;
 }
 
@@ -314,6 +316,9 @@ div.main-title img {
 
 @media(max-width: 1279px) { 
 
+    .Aboutdiv{
+        width: 98%;
+    }
     .main-title {
         /* width: 100%; */
         display: flex; 
@@ -398,13 +403,6 @@ div.main-title img {
     box-sizing: border-box;
     /* box-shadow: 0 20px 50px; */
 } 
-/* h1 {
-    margin: 0;
-    padding: 0;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-} */
 
 .skillbox {
     box-sizing: border-box;
@@ -505,6 +503,7 @@ div.main-title img {
     .dropdown {
         float: right;
         overflow: hidden;
+        margin-right: 10px;
       }
       
       .dropdown .dropbtn {
@@ -566,11 +565,12 @@ div.main-title img {
 
 @media(max-width: 1279px) { 
     .contact-text {
-        width:100%;
-        text-align: center;
+        width:96%;
+        /* text-align: center; */
+        text-align: justify;
     }
     form {
-        width:100%;
+        width:98%;
         margin-top: 15px;
     }
 }
@@ -769,8 +769,9 @@ div.main-title img {
     }
 
     div.hvrbox {
-        width:90%;
+        width:98%;
         margin-bottom: 20px;
+        margin-right: 10px;
     }
 
     .main-content {
@@ -778,7 +779,7 @@ div.main-title img {
         margin-right: 20px;
     }
     .hvrbox img {
-        height: 100px;
+        height: 150px;
     }
 
 } 
