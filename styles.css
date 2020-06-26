@@ -147,14 +147,9 @@ header {
         font-size: 0.8em;
         line-height: 2em;
     }
-    .banner-img {
-        /* margin-top: 20%; */
-        /* width: 80%; */
-        /* object-fit: cover; */
-    }
 
     .note {
-        bottom: 10%;
+        bottom: 8%;
         left: 14%;
     }
 
