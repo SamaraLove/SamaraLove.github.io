@@ -883,6 +883,8 @@ div.main-title img {
 
 /* PROJECT 1 page palceholder
 ############################################################### */
+
+
 div.Projects:hover {
     background-color: #B00149;
     color: #fff;
@@ -913,8 +915,10 @@ div.Projects img {
 }
 
 #content {
+    width: 98%;
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
 }
 
 .Project-text {
