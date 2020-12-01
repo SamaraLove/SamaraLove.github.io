@@ -26,6 +26,7 @@ body {
 }
 @media(max-width: 1279px) { 
     body {
+        width:98%;
         font-size: 1rem;
         line-height:1.5rem;
     }
@@ -57,11 +58,6 @@ header {
     background-color: #8F8CE7;
     z-index: 2;
     cursor: pointer;
-    width: 100%;
-}
-
-.banner-img {
-    width: 100%;
 }
 
 .SL-Title{
@@ -69,7 +65,6 @@ header {
     position: absolute;
     top: 15%;
     left: 35%;
-    /* text-align: center; */
     color: white;
 
     font-size: 1em;
@@ -80,7 +75,7 @@ header {
 .title-move .letter {
     display: inline-block;
     /* line-height: 3em; */
-  }
+} 
 .top-nav{
     position: absolute;
     top: 5%;
@@ -107,16 +102,43 @@ header {
     border-bottom: 2px solid #8246AF;
 }
 
+.rotating-banner img{
+    /* display: flex;
+    justify-content: center; */
+    text-align: center;
+}
 
-@media(max-width: 1279px) { 
+.note {
+    position: absolute;
+    color: #B00149;
+    text-align: center;
+    font-family: 'Pacifico', cursive;   
+    font-size: 1em;
+    line-height: 2em;
+    letter-spacing: 4px;
+}
+
+@media(min-width: 1280px) { 
+    .banner-img {
+        width: 100%;
+    }
+    .note {
+        bottom: 10%;
+        right: 14%;
+
+    }
+}
+
+@media(max-width: 999px) { 
     .rotating-banner img{
-        top: 40%;
-        /* height: 300px; */
-        margin-top: 5%;
+        /* top: 50%; */
+        height: 600px;
+        margin-top: 4%;
+        /* height: 40%; */
     }
     .top-nav{
         top: 0%;
-        max-height: 8%;
+        max-height: 9%;
     }
     .SL-Title{
         position: absolute;
@@ -124,6 +146,38 @@ header {
         left: 35%;
         font-size: 0.8em;
         line-height: 2em;
+    }
+
+    .note {
+        bottom: 8%;
+        left: 14%;
+    }
+
+}
+
+@media only screen and (max-width: 1279px) and (min-width: 1000px) {
+/* @media(max-width: 1025px) {  */
+    .rotating-banner img{
+        height: 1000px;
+        width: 100%;
+        margin-top: 4%;
+        object-fit: cover;
+        /* height: 40%; */
+    }
+    .top-nav{
+        top: 0%;
+        max-height: 9%;
+    }
+    .SL-Title{
+        position: absolute;
+        top: 10%;
+        left: 35%;
+        font-size: 0.8em;
+        line-height: 2em;
+    }
+    .note {
+        bottom: 10%;
+        left: 35%;
     }
 
 }
@@ -180,6 +234,7 @@ div.main-title img {
 .Aboutdiv{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 100%;
 }
 
@@ -202,7 +257,7 @@ div.main-title img {
 
 #Hobbies p {
     text-align: center;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
 }
 
 .dog p {
@@ -314,6 +369,9 @@ div.main-title img {
 
 @media(max-width: 1279px) { 
 
+    .Aboutdiv{
+        width: 98%;
+    }
     .main-title {
         /* width: 100%; */
         display: flex; 
@@ -398,13 +456,6 @@ div.main-title img {
     box-sizing: border-box;
     /* box-shadow: 0 20px 50px; */
 } 
-/* h1 {
-    margin: 0;
-    padding: 0;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-} */
 
 .skillbox {
     box-sizing: border-box;
@@ -505,6 +556,7 @@ div.main-title img {
     .dropdown {
         float: right;
         overflow: hidden;
+        margin-right: 10px;
       }
       
       .dropdown .dropbtn {
@@ -562,16 +614,25 @@ div.main-title img {
         margin-left: 220px; /* Same as the width of the sidenav */
         width:calc(100% - 220px);
     }
+
 }
 
 @media(max-width: 1279px) { 
     .contact-text {
-        width:100%;
-        text-align: center;
+        width:96%;
+        /* text-align: center; */
+        text-align: justify;
     }
     form {
-        width:100%;
-        margin-top: 15px;
+        width:98%;
+        margin-top: 0px;
+    }
+    .form-item button {
+        margin-top: 30px;
+    }
+    #social-media2 img {
+        margin: 10px;
+        margin-bottom: 0px;
     }
 }
 
@@ -760,7 +821,7 @@ div.main-title img {
 }
 
 
-@media(max-width: 1279px) {
+@media(max-width: 999px) {
     .Projects-title {
         width: 95%;
         text-align: justify;
@@ -769,8 +830,9 @@ div.main-title img {
     }
 
     div.hvrbox {
-        flex-basis:100%;
+        width:98%;
         margin-bottom: 20px;
+        margin-right: 10px;
     }
 
     .main-content {
@@ -778,10 +840,12 @@ div.main-title img {
         margin-right: 20px;
     }
     .hvrbox img {
-        height: 250px;
+        height: 150px;
     }
 
 } 
+
+
 
 @media(min-width: 1280px) { 
     .Projects-title {
@@ -807,10 +871,20 @@ div.main-title img {
 
 }   
 
+@media only screen and (max-width: 1279px) and (min-width: 1000px) {
+    .hvrbox img {
+        height: 400px;
+    }
+    div.hvrbox {
+        width:98%;
+    }
+}
 
 
 /* PROJECT 1 page palceholder
 ############################################################### */
+
+
 div.Projects:hover {
     background-color: #B00149;
     color: #fff;
@@ -841,8 +915,10 @@ div.Projects img {
 }
 
 #content {
+    width: 98%;
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
 }
 
 .Project-text {
