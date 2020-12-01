@@ -10,12 +10,12 @@ anime.timeline({loop: true})
     opacity: [0,1],
     translateZ: 0,
     easing: "easeOutExpo",
-    duration: 950,
+    duration: 1500,
     delay: (el, i) => 70*i
   }).add({
     targets: '.title-move',
     opacity: 0,
-    duration: 2000,
+    duration: 500,
     easing: "easeOutExpo",
     delay: 1000
   });
