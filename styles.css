@@ -8,9 +8,9 @@ body {
   /* font-size: 1rem; */
   /* font-weight: bold; */
   height: calc(100% - 2%);
-  width: 100%;
+  /* width: 100%; */
 }
-@media (min-width: 1280px) {
+@media (min-width: 1281px) {
   /* body {
     font-size: 2rem;
     line-height: 2.5rem;
@@ -231,7 +231,7 @@ div.main-title img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
+  /* width: 100%; */
 }
 
 #Hobbies-group {
@@ -488,7 +488,7 @@ div.main-title img {
 }
 /* SIDE BAR
 ############################################################### */
-@media (min-width: 1280px) {
+@media (min-width: 1281px) {
   .dropdown {
     display: none;
   }
@@ -549,9 +549,9 @@ div.main-title img {
   /* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar */
 
   .dropdown {
-    float: right;
+    /* float: right; */
     overflow: hidden;
-    margin-right: 10px;
+    /* margin-right: 10px; */
   }
 
   .dropdown .dropbtn {
@@ -598,7 +598,7 @@ div.main-title img {
 /* FORM - CONTACT PAGE
 ############################################################### */
 
-@media (min-width: 1280px) {
+@media (min-width: 1281px) {
   .contact-text {
     margin-left: 11%; /* Same as the width of the sidenav */
     /* width: calc(100% - 10%); */
@@ -836,7 +836,7 @@ form {
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1281px) {
   .Projects-title {
     margin-left: 11%;
     /* width: calc(100% - 10%); */
@@ -846,7 +846,8 @@ form {
     flex-basis: 40%;
   }
   .hvrbox img {
-    height: 450px;
+    /* height: 450px; */
+    max-height: 15vw;
   }
 
   .main-content {
