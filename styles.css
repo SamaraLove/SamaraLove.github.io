@@ -612,9 +612,10 @@ div.main-title img {
 
 @media (max-width: 1280px) {
   .contact-text {
-    width: 96%;
+    /* width: 96%; */
     /* text-align: center; */
     text-align: justify;
+    margin-right: 0px;
   }
   form {
     /* width: 98%; */
@@ -639,17 +640,18 @@ div.main-title img {
   justify-content: center;
   align-items: center;
 }
+
 .contact-text {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-right: auto;
+  /* margin-right: auto; */
   /* flex-basis: 70%; */
 }
 .contact-text h1 {
   font-family: "Pacifico", cursive;
-  font-size: 3em;
+  font-size: 2em;
   letter-spacing: 4px;
   line-height: 1.5em;
 }
